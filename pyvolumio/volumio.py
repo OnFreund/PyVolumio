@@ -39,7 +39,7 @@ class Volumio:
             # hack to handle methods not supported by older versions
             return {}
         except (asyncio.TimeoutError, aiohttp.ClientError) as error:
-            raise CannotConnectError(response) from error
+            raise CannotConnectError() from error
 
     async def get_system_version(self):
         """Get the systems version."""
