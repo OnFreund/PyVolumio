@@ -92,6 +92,10 @@ class Volumio:
         """Send 'play' command to Volumio."""
         await self._send_volumio_cmd(params={"cmd": "play"})
 
+    async def repeatAll(self, repeat):
+        """Send 'repeat' command to Volumio."""
+        await self._send_volumio_cmd(params={"cmd": "repeat", "value": str(repeat).lower()})
+
     async def pause(self):
         """Send 'pause' command to Volumio."""
         await self._send_volumio_cmd(params={"cmd": "pause"})
