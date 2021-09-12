@@ -18,7 +18,7 @@ URL = 'https://github.com/OnFreund/PyVolumio'
 EMAIL = 'onfreund@gmail.com'
 AUTHOR = 'On Freund'
 REQUIRES_PYTHON = '>=3.7.0'
-VERSION = '0.1.3'
+VERSION = '0.1.4'
 
 REQUIRED = ['aiohttp']
 
