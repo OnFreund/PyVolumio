@@ -150,6 +150,10 @@ class Volumio:
         """Clear current playlist."""
         await self._send_volumio_cmd(params={"cmd": "clearQueue"})
 
+    async def get_queue(self):
+        """Get the current queue."""
+        return (await self._get_volumio_msg("getQueue"))
+
     async def replace_and_play(self, item):
         """Replace the current content of the queue and play item."""
         await self._post_volumio_msg("replaceAndPlay", json_payload=item)
