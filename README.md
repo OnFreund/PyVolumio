@@ -1,6 +1,6 @@
 # PyVolumio
 
-A python interface control [Volumio](https://volumio.org/).
+A python interface to control [Volumio](https://volumio.org/).
 
 ## Installation
 
